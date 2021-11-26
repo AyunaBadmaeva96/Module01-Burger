@@ -40,19 +40,19 @@ body {
 }
 .header-nav a::after {
     content: '';
-    color: transparent;
+    background-color: transparent;
     width: 100%;
     height: 3px;
     border-radius: 1.5px;
     display: block;
 }
 .header-nav a.active::after {
-    color: #FFC725;
+    background-color: #FFC725;
 }
-/*button {
+button {
     color: #443737;
     font-weight: 700;
     font-size: 15px;
     line-height: 20px;
     border: none;
-}*/
+}
