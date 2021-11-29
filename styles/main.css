@@ -35,7 +35,6 @@ body {
     color: #443737;
     font-weight: 600;
     font-size: 20px;
-    line-height: 120%;
     text-decoration: none;
 }
 .header-nav a::after {
@@ -49,10 +48,81 @@ body {
 .header-nav a.active::after {
     background-color: #FFC725;
 }
-button {
+.button {
+    display: flex;
+    align-items: center;
+    background-color: transparent;
+    border: none;
+    padding: 0;
+    gap: 10px;
+}
+.button-item {
+    position: relative;
+}
+.button-count {
+    background-color: #F37335;
+    color: #FFFFFF;
+    font-weight: 700;
+    font-size: 13px;
+    line-height: 1.3;
+    border-radius: 100%;
+    position: absolute;
+    text-align: center;
+    width: 17px;
+    height: 17px;
+    bottom: 3px;
+    right: -4px;
+}
+.button-text {
     color: #443737;
     font-weight: 700;
     font-size: 15px;
+}
+.bg {
+    background-image: url(../image/content.jpg);
+    background-size: cover;
+    background-position: center center;
+    color: #FFFFFF;
+    text-align: center;
+    padding: 142px 0;
+}
+.breadcrumbs {
+    display: flex;
+    justify-content: center;
+    padding-left: 0;
+    margin-top: 0;
+    list-style: none;
+    gap: 16px;
+}
+.breadcrumbs a {
+    color: #DEDEDE;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    font-size: 15px;
     line-height: 20px;
-    border: none;
+    text-decoration: none;
+    text-align: center;
+}
+.breadcrumbs a::before {
+    content: '/';
+    position: relative;
+    left: -8px;
+}
+.breadcrumbs li:first-child a::before {
+    display: none;
+}
+.title {
+    font-weight: 700;
+    font-size: 79px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.description {
+    color: #FAF9F9;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 160%;
+    max-width: 320px;
+    margin: 0 auto;
 }
