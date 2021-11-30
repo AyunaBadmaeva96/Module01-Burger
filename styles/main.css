@@ -190,3 +190,6 @@ header {
     text-transform: uppercase;
     padding: 20px 26px;
 }
+.banner-link:hover {
+    color: #FFFFFF;
+}
