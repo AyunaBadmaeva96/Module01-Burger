@@ -151,14 +151,13 @@ header {
     background-repeat: no-repeat;
     color: #FFFFFF;
     text-align: left;
-    padding-top: 65px;
+    padding-top: 100px;
     padding-bottom: 120px;
     padding-left: 100px;
 }
 .banner-title {
     font-weight: 900;
     font-size: 60px;
-    max-width: 157px;
     margin-top: 0;
     margin-bottom: 10px;
 }
@@ -169,7 +168,11 @@ header {
     font-weight: 600;
     font-size: 14px;
     text-transform: uppercase;
-    padding: 5px 18.5px;
+    text-align: center;
+    display: block;
+    max-width: 95px;
+    padding: 5px 0;
+    margin-bottom: 9px;
 }
 .banner-box p {
     color: #FAF9F9;
