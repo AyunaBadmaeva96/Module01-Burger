@@ -22,16 +22,19 @@
     <header id="headerTop">
         <div class="container">
             <div class="header">
+                <div class="header-burger">
+                    <button class="burger" onclick="openModal()"></button>
+                </div>
                 <div class="header-item">
                     <a class="header-logo" href="index.html"></a>
-                <nav>
-                    <ul class="header-nav">
-                        <li><a href="index.html">Главная</a></li>
-                        <li><a class="active" href="#">Меню</a></li>
-                        <li><a href="#">О нас</a></li>
-                        <li><a href="#">Контакты</a></li>
-                    </ul>
-                </nav>
+                    <nav>
+                        <ul class="header-nav">
+                            <li><a href="index.html">Главная</a></li>
+                            <li><a class="active" href="#">Меню</a></li>
+                            <li><a href="#">О нас</a></li>
+                            <li><a href="#">Контакты</a></li>
+                        </ul>
+                    </nav>
                 </div>
                 <button class="button" type="button">
                     <span class="button-item">
@@ -76,75 +79,75 @@
                     <h2 class="menu-title">Бургеры</h2>
                     <select class="menu-select">
                         <option value="">Сортировать</option>
-                        <option value="up">По возрастанию</option>
-                        <option value="down">По убыванию</option>
+                        <option id="sort-asc" value="up">По возрастанию</option>
+                        <option id="sort-desc" value="down">По убыванию</option>
                     </select>
                 </div>
-                <div class="menu-grid">
-                    <div class="menu-grid_item">
-                        <div class="menu-grid_cover">
+                <div class="menu-grid" id="menuGrid">
+                    <div class="menu-grid-item" data-price="26">
+                        <div class="menu-grid-cover">
                             <img src="image/menu/hot.jpg" alt="Острый бургер">
                         </div>
-                        <p class="menu-grid_title">Острый бургер</p>
-                        <p class="menu-grid_price">$26</p>
-                        <button class="menu-grid_btn" type="button">
-                            <span class="menu-grid_icon"></span>
-                            <span class="menu-grid_buy">купить</span>
+                        <p class="menu-grid-title">Острый бургер</p>
+                        <p class="menu-grid-price">$26</p>
+                        <button class="menu-grid-btn" type="button">
+                            <span class="menu-grid-icon"></span>
+                            <span class="menu-grid-buy">купить</span>
                         </button>
                     </div>
-                    <div class="menu-grid_item">
-                        <div class="menu-grid_cover">
+                    <div class="menu-grid-item" data-price="16">
+                        <div class="menu-grid-cover">
                             <img src="image/menu/grill.jpg" alt="Гриль Бургер">
                         </div>
-                        <p class="menu-grid_title">Гриль Бургер</p>
-                        <p class="menu-grid_price">$16</p>
-                        <button class="menu-grid_btn" type="button">
-                            <span class="menu-grid_icon"></span>
-                            <span class="menu-grid_buy">купить</span>
+                        <p class="menu-grid-title">Гриль Бургер</p>
+                        <p class="menu-grid-price">$16</p>
+                        <button class="menu-grid-btn" type="button">
+                            <span class="menu-grid-icon"></span>
+                            <span class="menu-grid-buy">купить</span>
                         </button>
                     </div>
-                    <div class="menu-grid_item">
-                        <div class="menu-grid_cover">
+                    <div class="menu-grid-item" data-price="37">
+                        <div class="menu-grid-cover">
                             <img src="image/menu/giant.jpg" alt="Бургер Гигант">
                         </div>
-                        <p class="menu-grid_title">Бургер Гигант</p>
-                        <p class="menu-grid_price">$37</p>
-                        <button class="menu-grid_btn" type="button">
-                            <span class="menu-grid_icon"></span>
-                            <span class="menu-grid_buy">купить</span>
+                        <p class="menu-grid-title">Бургер Гигант</p>
+                        <p class="menu-grid-price">$37</p>
+                        <button class="menu-grid-btn" type="button">
+                            <span class="menu-grid-icon"></span>
+                            <span class="menu-grid-buy">купить</span>
                         </button>
                     </div>
-                    <div class="menu-grid_item">
-                        <div class="menu-grid_cover">
+                    <div class="menu-grid-item" data-price="18">
+                        <div class="menu-grid-cover">
                             <img src="image/menu/burgur.jpg" alt="Бургур с курицей">
                         </div>
-                        <p class="menu-grid_title">Бургур с курицей</p>
-                        <p class="menu-grid_price">$18</p>
-                        <button class="menu-grid_btn" type="button">
-                            <span class="menu-grid_icon"></span>
-                            <span class="menu-grid_buy">купить</span>
+                        <p class="menu-grid-title">Бургур с курицей</p>
+                        <p class="menu-grid-price">$18</p>
+                        <button class="menu-grid-btn" type="button">
+                            <span class="menu-grid-icon"></span>
+                            <span class="menu-grid-buy">купить</span>
                         </button>
                     </div>
-                    <div class="menu-grid_item">
-                        <div class="menu-grid_cover">
+                    <div class="menu-grid-item" data-price="9">
+                        <div class="menu-grid-cover">
                             <img src="image/menu/with-chicken.jpg" alt="Бургер с курицей">
                         </div>
-                        <p class="menu-grid_title">Бургер с курицей</p>
-                        <p class="menu-grid_price">$9</p>
-                        <button class="menu-grid_btn" type="button">
-                            <span class="menu-grid_icon"></span>
-                            <span class="menu-grid_buy">купить</span>
+                        <p class="menu-grid-title">Бургер с курицей</p>
+                        <p class="menu-grid-price">$9</p>
+                        <button class="menu-grid-btn" type="button">
+                            <span class="menu-grid-icon"></span>
+                            <span class="menu-grid-buy">купить</span>
                         </button>
                     </div>
-                    <div class="menu-grid_item">
-                        <div class="menu-grid_cover">
+                    <div class="menu-grid-item" data-price="7">
+                        <div class="menu-grid-cover">
                             <img src="image/menu/triple.jpg" alt="Тройной бургер">
                         </div>
-                        <p class="menu-grid_title">Тройной бургер</p>
-                        <p class="menu-grid_price">$7</p>
-                        <button class="menu-grid_btn" type="button">
-                            <span class="menu-grid_icon"></span>
-                            <span class="menu-grid_buy">купить</span>
+                        <p class="menu-grid-title">Тройной бургер</p>
+                        <p class="menu-grid-price">$7</p>
+                        <button class="menu-grid-btn" type="button">
+                            <span class="menu-grid-icon"></span>
+                            <span class="menu-grid-buy">купить</span>
                         </button>
                     </div>
                 </div>
@@ -206,6 +209,14 @@
                         <li><a href="#">Методы оплаты</a></li>
                         <li><a href="#">Контакты</a></li>
                     </ul>
+                    <ul class="footer-list footer-list-tel">
+                        <li>
+                            <a href="tel:+79007871313">+ 7 900 787 13-13</a>
+                        </li>
+                        <li>
+                            <a href="tel:+79007001414">+ 7 900 700 14-14</a>
+                        </li>
+                    </ul>
                 </div>
                 <div class="footer-item">
                     <h2>основная информация</h2>
@@ -222,7 +233,7 @@
                     </ul>
                 </div>
                 <div class="footer-tel">
-                    <ul class="footer-list footer-list_tel">
+                    <ul class="footer-list footer-list-tel">
                         <li>
                             <a href="tel:+79007871313">+ 7 900 787 13-13</a>
                         </li>
@@ -235,7 +246,50 @@
         </div>
     </footer>
     <a class="button-up hidden" id="btnUp" href="#headerTop">Наверх</a>
+    <div id="modal" class="modal" style="top: 0px;">
+        <ul class="header-nav">
+            <li><a href="index.html">Главная</a></li>
+            <li><a class="active" href="#">Меню</a></li>
+            <li><a href="#">О нас</a></li>
+            <li><a href="#">Контакты</a></li>
+        </ul>
+        <button class="burger-close" onclick="closeModal()"></button>
+    </div>
     <script>
+        //Сортировка товаров
+        document.querySelector('#sort-asc').onclick = function (){
+            mySort('data-price');
+        }
+        document.querySelector('#sort-desc').onclick = function (){
+            mySortDesc('data-price');
+        }
+
+        function mySort(sortType){
+            let menuGrid = document.querySelector ('#menuGrid');
+            for (let i = 0; i < menuGrid.children.length; i++) {
+                for (let j = i; j < menuGrid.children.length; j++) {
+                    if (+menuGrid.children[i].getAttribute(sortType) > +menuGrid.children[j].getAttribute(sortType)){
+                        replacedNode = menuGrid.replaceChild(menuGrid.children[j], menuGrid.children[i]);
+                        insertAfter(replacedNode, menuGrid.children[i]);
+                    }
+                }
+            }
+        }
+        function mySortDesc(sortType){
+            let menuGrid = document.querySelector ('#menuGrid');
+            for (let i = 0; i < menuGrid.children.length; i++) {
+                for (let j = i; j < menuGrid.children.length; j++) {
+                    if (+menuGrid.children[i].getAttribute(sortType) < +menuGrid.children[j].getAttribute(sortType)){
+                        replacedNode = menuGrid.replaceChild(menuGrid.children[j], menuGrid.children[i]);
+                        insertAfter(replacedNode, menuGrid.children[i]);
+                    }
+                }
+            }
+        }
+
+        function insertAfter (elem, refElem){
+            return refElem.parentNode.insertBefore(elem, refElem.nextSibling);
+        }
         //Smooth Scroll
         const links = document.querySelectorAll(".banner-link");
 
@@ -275,6 +329,14 @@
             } else {
                 document.getElementById('btnUp').className = 'button-up hidden';
             }
+        }
+        //Menu
+        function openModal() {
+            document.getElementById("modal").style.top = "0px";
+        }
+
+        function closeModal() {
+            document.getElementById("modal").style.top = "-400px";
         }
     </script>
 </body>
