@@ -280,9 +280,9 @@ header {
     background-color: #FBB731;
     border: none;
     border-radius: 5px;
-    padding: 10px 32px;
     cursor: pointer;
     transition: 0.2s;
+    padding: 10px 32px;
 }
 .menu-grid-btn:hover {
     background-color: #F37335;
@@ -303,6 +303,7 @@ header {
     margin: 0;
 }
 .more {
+    margin-top: 0;
     margin-bottom: 140px;
 }
 .footer {
@@ -310,7 +311,7 @@ header {
     color: #FFFFFF;
     padding-top: 117px;
     padding-bottom: 95px;
-    margin-top: 140px;
+    margin-top: 0;
 }
 .footer-box {
     display: flex;
@@ -324,10 +325,10 @@ header {
     flex: 0 0 auto;
 }
 .footer-item h2 {
-    text-transform: uppercase;
-    font-size: 20px;
     font-weight: 800;
+    font-size: 20px;
     line-height: 130%;
+    text-transform: uppercase;
     margin: 2px 24px 19px 15px;
 }
 .footer-list {
@@ -336,18 +337,16 @@ header {
     transition: 0.2s;
 }
 .footer-list li {
-    color: #FAF9F9;
+    color: #DEDEDE;
     font-family: 'Open Sans', sans-serif;
-    font-size: 15px;
     font-weight: 400;
+    font-size: 15px;
     line-height: 150%;
     margin-top: 10px;
     margin-left: 15px;
 }
 .footer-list a {
-    color: #DEDEDE;
     text-decoration: none;
-    font-weight: 400;
 }
 .footer-list a:hover {
     color: #FBB731;
@@ -362,14 +361,13 @@ header {
     transition: 0.2s;
 }
 .footer-list-tel li {
-    margin-bottom: 15px;
-}
-.footer-list_tel a {
     color: #FBB731;
-    font-size: 20px;
     font-weight: 800;
+    font-size: 20px;
+    line-height: 190%;
+    text-transform: uppercase;
 }
-.footer-list-tel a:hover {
+.footer-list-tel li:hover {
     color: #DEDEDE;
 }
 .button-up {
@@ -581,12 +579,6 @@ header {
 /*   Responsive   */
 
 @media screen and (min-width: 1001px) {
-    .pre-btn {
-        display: none;
-    }
-    .nxt-btn {
-        display: none;
-    }
     .footer-list + .footer-list_tel {
         display: none;
     }
@@ -622,41 +614,7 @@ header {
         grid-template-columns: repeat(2, 1fr);
         gap: 50px 15px;
     }
-    .pre-btn,
-    .nxt-btn {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        background: #FFFFFF;
-        border-radius: 100%;
-        border: none;
-        width: 10vw;
-        height: 10vw;
-        position: absolute;
-        cursor: pointer;
-        z-index: 9;
-    }
-    .pre-btn {
-        left: 0;
-        transform: rotate(180deg);
-        margin-left: 20px;
-    }
-    .nxt-btn {
-        right: 0;
-        margin-right: 20px;
-    }
-    .pre-btn img,
-    .nxt-btn img {
-        opacity: 0.5;
-    }
-    .pre-btn:hover img,
-    .nxt-btn:hover img {
-        opacity: 1;
-    }   
-    .menu-grid::-webkit-scrollbar {
-        display: none;
-    }
-    .more.menu-grid {
+    .more .menu-grid {
         grid-template-columns: repeat(3, 1fr);
         overflow-x: scroll;
     }
@@ -683,20 +641,6 @@ header {
         height: 37px;
         margin-left: 21px;
     }
-    /*.header-nav {
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-        gap: 47px;
-        list-style: none;
-        margin: 0;
-    }
-    .header-nav a {
-        color: #443737;
-        font-weight: 600;
-        font-size: 20px;
-        text-decoration: none;
-    }*/
     .bg {
         padding: 54px 0;
         margin-bottom: 36px;
@@ -755,7 +699,8 @@ header {
     }
     .menu-grid {
         grid-template-columns: repeat(2, 1fr);
-        gap: 26px 12px;
+        gap: 24px 11px;
+        margin-bottom: 98px;
     }
     .menu-grid-cover {
         width: 139px;
@@ -775,55 +720,48 @@ header {
         margin: 6px 0 11px;
     }
     .menu-grid-btn {
-        padding: 10px 20px;
+        gap: 2px;
+        padding: 11px 25px;
     }
     .more {
-        margin-top: 0;
-        margin-bottom: 140px;
+        margin-bottom: 61px;
+    }
+    .more .menu-header {
+        margin-bottom: 35px;
+    }
+    .more .menu-grid {
+        gap: 6px;
+        margin-bottom: 61px;
     }
     .footer {
-        background: #1E2F40;
-        color: #FFFFFF;
-        padding-top: 117px;
-        padding-bottom: 95px;
-        margin-top: 140px;
+        padding-top: 60px;
+        padding-bottom: 60px;
     }
     .footer-box {
-        display: flex;
-        justify-content: space-between;
-    }
-    .footer-logo {
-        width: 63px;
-        height: 56px;
+        display: grid;
+        grid-template-columns: 30% 70%;
+        grid-template-areas: "logo tel" "links links" "info info" ;
+        gap: 0;
     }
     .footer-item {
         flex: 0 0 auto;
     }
     .footer-item h2 {
         text-transform: uppercase;
-        font-size: 20px;
         font-weight: 800;
-        line-height: 130%;
-        margin: 2px 24px 19px 15px;
-    }
-    .footer-list {
-        list-style-type: none;
-        padding-left: 0;
-        transition: 0.2s;
+        font-size: 18px;
+        line-height: 211%;
+        margin: 0;
     }
     .footer-list li {
-        color: #FAF9F9;
-        font-family: 'Open Sans', sans-serif;
-        font-size: 15px;
-        font-weight: 400;
-        line-height: 150%;
-        margin-top: 10px;
-        margin-left: 15px;
+        line-height: 160%;
+        /*margin-top: 10px;
+        margin-left: 15px;*/
     }
     .footer-list a {
         color: #DEDEDE;
-        text-decoration: none;
         font-weight: 400;
+        text-decoration: none;
     }
     .footer-list a:hover {
         color: #FBB731;
@@ -833,44 +771,21 @@ header {
         font-weight: 400;
         margin-bottom: 4px;
     }
-    .footer-list-tel {
-        margin-top: 1px;
-        transition: 0.2s;
+    .footer-list + .footer-list-tel{
+        display: none;
     }
-    .footer-list-tel li {
-        margin-bottom: 15px;
+    .footer-item:nth-child(1) {
+        grid-area: logo;
     }
-    .footer-list_tel a {
-        color: #FBB731;
-        font-size: 20px;
-        font-weight: 800;
+    .footer-item:nth-child(2) {
+        grid-area: links;
     }
-    .footer-list-tel a:hover {
-        color: #DEDEDE;
+    .footer-item:nth-child(3) {
+        grid-area: info;
     }
-    .button-up {
-        background-color: #FBB731;
-        border: none;
-        border-radius: 5px;
-        color: #1E2F40;
-        font-weight: 700;
-        font-size: 14px;
-        text-transform: uppercase;
-        text-decoration: none;
-        padding: 10px 32px;
-        cursor: pointer;
-        position: fixed;
-        bottom: 20px;
-        right: 20px;
-        transition: 1s;
-    }
-    .button-up:hover {
-        background-color: #F37335;
-    }
-    .button-up.hidden {
-        opacity: 0;
-    }
-    .button-up.visible {
-        opacity: 1;
+    .footer-tel {
+        display: block;
+        grid-area: tel;
+        text-align: right;
     }
 }
