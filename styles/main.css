@@ -304,9 +304,10 @@ header {
 }
 .more {
     margin-top: 0;
-    margin-bottom: 140px;
+    margin-bottom: 150px;
 }
 .footer {
+    font-family: 'Open Sans', sans-serif;
     background: #1E2F40;
     color: #FFFFFF;
     padding-top: 117px;
@@ -316,6 +317,7 @@ header {
 .footer-box {
     display: flex;
     justify-content: space-between;
+    gap: 120px;
 }
 .footer-logo {
     width: 63px;
@@ -329,45 +331,47 @@ header {
     font-size: 20px;
     line-height: 130%;
     text-transform: uppercase;
-    margin: 2px 24px 19px 15px;
+    margin-top: 0;
+    margin-bottom: 19px;
 }
 .footer-list {
     list-style-type: none;
     padding-left: 0;
+    margin: 0;
     transition: 0.2s;
 }
 .footer-list li {
-    color: #DEDEDE;
-    font-family: 'Open Sans', sans-serif;
+    color: #FAF9F9;
     font-weight: 400;
     font-size: 15px;
-    line-height: 150%;
-    margin-top: 10px;
-    margin-left: 15px;
+    line-height: 160%;
+    margin-bottom: 10px;
 }
 .footer-list a {
+    color: #DEDEDE;
     text-decoration: none;
 }
 .footer-list a:hover {
     color: #FBB731;
 }
 .footer-item span {
+    display: block;
     color: #DEDEDE;
     font-weight: 400;
-    margin-bottom: 4px;
+    margin-bottom: 0;
 }
 .footer-list-tel {
-    margin-top: 1px;
-    transition: 0.2s;
+    margin-top: 0;
+    margin-bottom: 0;
 }
-.footer-list-tel li {
+.footer-list-tel a {
     color: #FBB731;
     font-weight: 800;
     font-size: 20px;
     line-height: 190%;
     text-transform: uppercase;
 }
-.footer-list-tel li:hover {
+.footer-list-tel a:hover {
     color: #DEDEDE;
 }
 .button-up {
@@ -543,6 +547,7 @@ header {
     border: none;
     cursor: pointer;
 }
+/*Modal*/
 .modal {
     background-color: #FFF8DC;
     max-width: 500px;
@@ -578,17 +583,20 @@ header {
 
 /*   Responsive   */
 
-@media screen and (min-width: 1001px) {
-    .footer-list + .footer-list_tel {
+@media (min-width: 1001px) {
+    .footer-list + .footer-list-tel {
         display: none;
     }
 }
-@media screen and (min-width: 766px) {
+@media (min-width: 766px) {
     .header-burger {
         display: none;
     }
+    .modal {
+        display: none;
+    }
 }
-@media screen and (max-width: 1000px) {
+@media (max-width: 1000px) {
     .container {
         max-width: 738px;
     }
@@ -624,9 +632,21 @@ header {
     .footer-list + .footer-list_tel {
         display: block;
     }
+    .button-up {
+        display: none;
+    }
+}
+/*iPad mini*/
+@media (max-width: 765px) {
+    nav {
+        display: none;
+    }
+    .header {
+        gap: 21px;
+    }
 }
 /*iPhone SE*/
-@media screen and (max-width: 767px) {
+@media (max-width: 567px) {
     .container {
         max-width: 290px;
     }

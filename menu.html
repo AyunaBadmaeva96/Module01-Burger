@@ -228,7 +228,7 @@
                         </li>
                         <li>
                             <span>Адрес</span>
-                            Москва, ул. Тверская, 5, вход со двора
+                            Москва, ул. Тверская, 5
                         </li>
                     </ul>
                     </ul>
@@ -291,22 +291,6 @@
         function insertAfter (elem, refElem){
             return refElem.parentNode.insertBefore(elem, refElem.nextSibling);
         }
-        //Карусель в адаптиве
-        const menuGrid = [...document.querySelectorAll('.menu-grid')];
-        const nxtBtn = [...document.querySelectorAll('.pre-btn')];
-        const preBtn = [...document.querySelectorAll('.nxt-btn')];
-        
-        menuGrid.forEach ((item, i) => {
-            let containerDimensions = item.gettBoundingClientRect();
-            let containerWidth = containerDimension.width;
-
-            nxtBtn[i].addEventListener('click', () => {
-                item.scrolLeft += containerWidth;
-            }
-            nxtBtn[i].addEventListener('click', () => {
-                item.scrolLeft -= containerWidth;
-            })
-        })
         //Smooth Scroll
         const links = document.querySelectorAll(".banner-link");
 
