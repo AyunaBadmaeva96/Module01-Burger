@@ -519,8 +519,9 @@ header {
 .promo-description {
     color: #FAF9F9;
     font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
     font-size: 15px;
-    line-height: 24px;
+    line-height: 160%;
     margin: 0;
 }
 .promo-right {
@@ -585,7 +586,6 @@ header {
 }
 
 /* Responsive Main*/
-
 @media (min-width: 1001px) {
     .footer-list + .footer-list-tel {
         display: none;
@@ -686,7 +686,6 @@ header {
         display: none;
     }
 }
-/*iPad mini*/
 @media (max-width: 765px) {
     nav {
         display: none;
@@ -695,7 +694,6 @@ header {
         gap: 21px;
     }
 }
-/*iPhone SE*/
 @media (max-width: 567px) {
     .container {
         max-width: 290px;
@@ -881,78 +879,78 @@ header {
         background-position: 25% center;
     }
 }
-Responsive Index
+/*Responsive Index*/
 @media (max-width: 1000px) {
     .wrapper {
-        display: block;
-        width: 738px;
+        max-width: 738px;
     }
     .content {
-        flex: 0 0 580px;
-        padding: 42px 15px 160px 15px;
+        padding: 42px 14px 124px;
     }
     .content-title {
         font-size: 86px;
         line-height: 117%;
-        margin-bottom: 34px;
+        margin-bottom: 21px;
     }
     .content-title span {
         font-size: 22px;
         line-height: 124%;
-        margin-bottom: 13px;
+        margin-bottom: 11px;
     }
     .content-text {
         font-size: 14px;
         line-height: 140%;
-        margin-bottom: 50px;
+        margin-bottom: 34px;
     }
     .content-link,
     .promo-link {
-        color:#1E2F40;
-        background-color: #FBB731;
-        border: 1px solid #FBB731;
-        border-radius: 5px;
-        text-decoration: none;
-        padding: 18px 43px;
-        display: inline-block;
-        text-transform: uppercase;
-        text-align: center;
-        font-size: 14px;
-        font-weight: 700;
-        transition: 0.2s;
+        padding: 16px 39px;
+        font-size: 13px;
+        line-height: 123%;
     }
-    .main a:hover,
-    .promo a:hover {
-        background-color: transparent;
-        color: #FBB731;
-    }
-    .content-title{
-        font-size: 58px;
-    }
-    .content-title span {
-        font-size: 14px;
-    }
-    .content-title p{
-        margin-right: 22px;
-        line-height: 69px;
-
+    .visual {
+        flex-grow: 1;
+        display: flex;
+        justify-content: flex-end;
+        position: relative;
     }
     .visual-bg {
-        display: none;
+        width: 198px;
+        height: 100%;
+        margin-left: -68px;
     }
     .main img {
-        width: 250px;
-        height: 250px;
-        right: 0px;
-        top: -216px;
+        width: 523px;
+        position: absolute;
+        top: 111px;
+        right: -154px;
     }
     .promo {
-        padding-top: 95px;
+        margin: 105px 0;
     }
-    .promo .wrapper{
-        display: block;
+    .promo-box {
+        height: 298px;
     }
     .promo-left {
-        margin-bottom: 25px;
+        padding: 44px 30px;
+    }
+    .sale {
+        padding: 6px 21px;
+    }
+    .promo-right {
+        padding: 63px 31px;
+    }
+    .promo-right .promo-description {
+        margin-bottom: 16px;
+    }
+    .burger {
+        width: 34px;
+        height: 22px;
+        background-image: url(../image/Menu.svg);
+        background-color: transparent;
+        background-repeat: no-repeat;
+        background-size: contain;
+        border: none;
+        cursor: pointer;
     }
 }
