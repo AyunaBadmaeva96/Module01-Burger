@@ -45,6 +45,7 @@ header {
     font-weight: 600;
     font-size: 20px;
     text-decoration: none;
+    transition: 0.2s;
 }
 .header-nav a:hover {
     color: #FFC725;
@@ -116,6 +117,7 @@ header {
     line-height: 20px;
     text-decoration: none;
     text-align: center;
+    transition: 0.2s;
 }
 .breadcrumbs a:hover {
     color: #FFC725;
@@ -246,7 +248,7 @@ header {
 }
 .menu-grid-cover {
     width: 100%;
-    height: 430px;
+    height: 56.25vw;
     position: relative;
     overflow: hidden;
     margin-bottom: 23px;
@@ -258,7 +260,7 @@ header {
     transform: translate(-50%, -50%);
     object-fit: cover;
     width: 100%;
-    height: 430px;
+    height: 56.25vw;
 }
 .menu-grid-title {
     color: #1B2A49;
@@ -347,6 +349,7 @@ header {
 .footer-list a {
     color: #DEDEDE;
     text-decoration: none;
+    transition: 0.3s;
 }
 .footer-list a:hover {
     color: #FBB731;
@@ -603,6 +606,9 @@ header {
     .container {
         max-width: 738px;
     }
+    header {
+        border: none;
+    }
     .header-logo {
         width: 150px;
         height: 48px;
@@ -661,7 +667,7 @@ header {
     }
     .more .menu-grid-cover,
     .more .menu-grid-cover img{
-        height: 320px;
+        height: 56.25vw;
     }
     .menu-grid-cover {
         margin-bottom: 22.5px;
@@ -695,9 +701,6 @@ header {
     }
 }
 @media (max-width: 567px) {
-    .container {
-        max-width: 290px;
-    }
     .header {
         padding: 13px 0 15px;
         gap: 0;
@@ -771,13 +774,12 @@ header {
         margin-bottom: 98px;
     }
     .menu-grid-cover {
-        width: 139px;
-        height: 180px;
+        width: 43.44vw;
+        height: 56.25vw;
         margin-bottom: 10px;
     }
     .menu-grid-cover img {
-        width: 139px;
-        height: 180px;
+        height: 100%;
     }
     .menu-grid-title {
         font-weight: 700;
@@ -804,10 +806,6 @@ header {
     }
     .more .menu-grid-item {
         flex: 0;
-    }
-    .more .menu-grid-cover,
-    .more .menu-grid-cover img {
-        height: 180px;
     }
     .footer {
         padding-top: 60px;
@@ -882,7 +880,7 @@ header {
 /*Responsive Index*/
 @media (max-width: 1000px) {
     .wrapper {
-        max-width: 738px;
+       max-width: 738px;
     }
     .content {
         padding: 42px 14px 124px;
