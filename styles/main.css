@@ -60,6 +60,7 @@ header {
 }
 .header-nav a.active::after {
     background-color: #FFC725;
+    opacity: 0.5;
 }
 .button {
     display: flex;
